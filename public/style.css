@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+:root {
+    --yellow-color: #ffe100d8;
+    --black-color: #202024;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: var(--black-color);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    padding: 32px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.links a {
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.links a + a {
+    margin-left: 32px;
+}
+
+.links a::after {
+    content:"";
+    width: 0;
+    height: 2px;
+    background-color: tomato;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.links a:hover::after {
+    width: 100%;
+    transition: width 400ms ease-in-out;
+}
+
+.links a.active {
+  color: tomato;
+}
+
+/* CARD */
+
+.card {
+    width: 800px;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    background-color: black;
+    margin: 40px auto;
+
+    box-shadow: 1px 1px 1px 1px rgba(73, 33, 25, 0.603);
+
+    animation: upCard 750ms ease-in-out;
+}
+
+@keyframes upCard {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* CARD - INFORMATION */
+
+.information {
+    padding: 32px;
+}
+
+.item {
+    padding: 16px 0px 4px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.item:last-child {
+    border: none;
+}
+
+.information h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.information h3,
+.item div:nth-child(1) {
+    color: tomato;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: .8px;
+    font-weight: normal;
+}
+
+.item div:nth-child(2) {
+    font-size: 18px;
+}
+
+.item span {
+    background-color: var(--yellow-color);
+    color: black;
+    padding: 8px 16px;
+    margin: 8px 4px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 16px;
+    display: inline-block;
+    letter-spacing: .8px;
+}
+
+/* CARD INDEX */
+
+.table-container {
+  padding: 40px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.table-container table {
+  border-spacing: 0;
+}
+
+.table-container thead tr th {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--tomato-color);
+  color: tomato;
+  text-align: left;
+}
+
+th, td {
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  text-align: left;
+}
+
+tbody tr:last-child td {
+  border: none;
+}
+
+tbody tr td:first-child {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  align-items: center;
+}
+
+tbody tr td:first-child span {
+  width: 48px;
+  height: 48px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  border: 1px solid white;
+  box-shadow: 2px 1px 1px 1px tomato;
+}
+
+tbody tr td:last-child a,
+.table-container > a {
+  background-color: tomato;
+  text-decoration: none;
+  color: black;
+  padding: 8px 14px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.table-container > a {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.table-container table tr th:last-child,
+td:last-child {
+  text-align: center;
+}
+
+/* CARD FORM */
+
+input, select {
+  width: 100%;
+  line-height: 28px;
+  outline: none;
+  background-color: var(--black-color);
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+
+input::placeholder {
+  font-size: 16px;
+  color: rgb(131, 125, 125);
+  font-weight: normal;
+}
+
+input[type="radio"] {
+  width: initial;
+  margin-right: 4px;
+}
+
+button[type="submit"], a.button {
+  padding: 8px 16px;
+  background-color: limegreen;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 32px;
+}
+
+#form-delete button[type="submit"] {
+  margin-top: 8px;
+  background-color: rgb(187, 53, 53);
+}
+
+a.button {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
