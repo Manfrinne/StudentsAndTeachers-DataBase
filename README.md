@@ -26,7 +26,17 @@ O objetivo aqui é persistir os dados da aplicação Student-Teacher
 
 ## Passos do desenvolvimento:
 
-- Refatorar estruturas das pastas e rotas do servidor;
+- [x] Refatorar estruturas das pastas e rotas do servidor;
+- [x] Configurar conexão com o Banco de Dados;
+- [ ] Enviar dados para o Banco de Dados - Post function;
+- [ ] Pegar dados do Banco de Dados - Index function;
+- [ ] Criar Models com Callback functions;
+- [ ] Buscar registro único do Banco de Dados - Show function;
+- [ ] Editar dados do Banco de Dados - EDIT & PUT function;
+- [ ] Capturar erros da aplicação;
+- [ ] Deletar dados do Banco de Dados;
+- [ ] Ajustar tabelas, controllers e models dos membros;
+- [ ] Ordenar dados do Banco de Dados;
 
 
 ## Como contribuir:
