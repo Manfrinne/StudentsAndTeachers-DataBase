@@ -28,7 +28,7 @@ O objetivo aqui é persistir os dados da aplicação Student-Teacher
 
 - [x] Refatorar estruturas das pastas e rotas do servidor;
 - [x] Configurar conexão com o Banco de Dados;
-- [ ] Enviar dados para o Banco de Dados - Post function;
+- [x] Enviar dados para o Banco de Dados - Post function;
 - [ ] Pegar dados do Banco de Dados - Index function;
 - [ ] Criar Models com Callback functions;
 - [ ] Buscar registro único do Banco de Dados - Show function;

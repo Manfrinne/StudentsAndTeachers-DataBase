@@ -1,4 +1,5 @@
 const {age, date, grade} = require('../../lib/utils')
+const db = require('../../config/db')
 
 module.exports = {
 
@@ -19,6 +20,7 @@ module.exports = {
     }
 
     return
+
   },
 
   show(req, res) {
