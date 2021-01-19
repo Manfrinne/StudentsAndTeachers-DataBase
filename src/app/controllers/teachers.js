@@ -1,4 +1,5 @@
 const Teacher = require('../models/teacher')
+const {age, date, academic_level} = require('../../lib/utils')
 
 module.exports = {
 
@@ -29,7 +30,16 @@ module.exports = {
   },
 
   show(req, res) {
-    return
+    Teacher.find(req.params.id, function(teacher) {
+      if (!teacher) return res.send("TEACHER not found!")
+
+      teacher.age = age(teacher.birth)
+      teacher.academic_level = academic_level(teacher.academic_level)
+      teacher.disciplines = teacher.disciplines.split(",")
+      teacher.create_at = new Intl.DateTimeFormat('pt-BR').format(teacher.create_at)
+
+      return res.render("teachers/show", { teacher })
+    })
   },
 
   edit(req, res) {

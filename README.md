@@ -31,7 +31,7 @@ O objetivo aqui é persistir os dados da aplicação Student-Teacher
 - [x] Enviar dados para o Banco de Dados - Post function;
 - [x] Pegar dados do Banco de Dados - Index function;
 - [x] Criar Models com Callback functions;
-- [ ] Buscar registro único do Banco de Dados - Show function;
+- [x] Buscar registro único do Banco de Dados - Show function;
 - [ ] Editar dados do Banco de Dados - EDIT & PUT function;
 - [ ] Capturar erros da aplicação;
 - [ ] Deletar dados do Banco de Dados;

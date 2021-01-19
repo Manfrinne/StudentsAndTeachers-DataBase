@@ -41,6 +41,14 @@ module.exports = {
         return callback(results.rows[0])
       })
     }
+  },
+
+  find(id, callback) {
+    db.query(`SELECT * FROM teachers WHERE id = $1`,
+    [id], function(err, results) {
+      if (err) return res.send("DATABASE ERROR!")
+
+      return callback(results.rows[0])
+    })
   }
 }
-
