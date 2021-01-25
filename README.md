@@ -38,6 +38,15 @@ O objetivo aqui é persistir os dados da aplicação Student-Teacher
 - [ ] Ajustar tabelas, controllers e models dos membros;
 - [ ] Ordenar dados do Banco de Dados;
 
+```
+CRUD	| SQL	    | HTTP	    | DDS
+---------------------------------------------
+create	| INSERT	| POST	    | write
+read	| SELECT 	| GET	    | read
+update	| UPDATE	| PUT	    | write
+delete	| DELETE	| DELETE	| dispose
+
+```
 
 ## Como contribuir:
 
