@@ -34,7 +34,7 @@ O objetivo aqui é persistir os dados da aplicação Student-Teacher
 - [x] Buscar registro único do Banco de Dados - Show function;
 - [x] Editar dados do Banco de Dados - EDIT & PUT function;
 - [x] Capturar erros da aplicação;
-- [ ] Deletar dados do Banco de Dados;
+- [x] Deletar dados do Banco de Dados;
 - [ ] Ajustar tabelas, controllers e models dos membros;
 - [ ] Ordenar dados do Banco de Dados;
 
