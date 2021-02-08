@@ -5,11 +5,17 @@ module.exports = {
 
   index(req, res) {
 
-    Teacher.all(function(teachers) {
+    const {filter} = req.query
 
-      return res.render("teachers/index", {teachers})
-
-    })
+    if (filter) {
+      Teacher.findBy(filter, function(teachers) {
+        return res.render("teachers/index", {teachers, filter})
+      })
+    } else {
+      Teacher.all(function(teachers) {
+        return res.render("teachers/index", {teachers})
+      })
+    }
   },
 
   create(req, res) {
