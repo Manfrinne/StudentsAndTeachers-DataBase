@@ -37,6 +37,21 @@ O objetivo aqui é persistir os dados da aplicação Student-Teacher
 - [x] Deletar dados do Banco de Dados;
 - [x] Ajustar tabelas, controllers e models dos membros;
 - [x] Ordenar dados do Banco de Dados;
+- [x] Unir tabelas, agrupar e contar colunas;
+- [x] Criar colunas, selecinar e mostrar instrutores dos membros;
+- [x] Estruturar filtro na página dos instrutores;
+- [x] Estilizar filtragem na página dos instrutores;
+- [x] Lógica da filtragem de dados;
+- [x] Filtro flexível com condições OR do SQL;
+- [x] Query dinâmica e estrutura de paginação na página de Professores;
+- [x] Adicionar função para numerar paginação - Frontend;
+- [x] Pegar total de registros com subqueries;
+- [x] Estruturar dados da paginação;
+- [x] Pegar dados do HTML com dataset;
+- [x] Montando paginação no Frontend - script.js;
+- [x] Estilizando a paginação - style.css;
+- [x] Mantendo estado do filtro;
+- [ ] Aplicando paginação para Estudantes;
 
 ```
 CRUD	| SQL	    | HTTP	    | DDS
