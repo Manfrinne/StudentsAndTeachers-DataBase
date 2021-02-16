@@ -51,7 +51,7 @@ O objetivo aqui é persistir os dados da aplicação Student-Teacher
 - [x] Montando paginação no Frontend - script.js;
 - [x] Estilizando a paginação - style.css;
 - [x] Mantendo estado do filtro;
-- [ ] Aplicando paginação para Estudantes;
+- [x] Aplicando paginação para Estudantes;
 
 ```
 CRUD	| SQL	    | HTTP	    | DDS
